@@ -71,15 +71,40 @@ header .navbar {
       left: 0;
       background: rgba(0, 0, 0, 0.5); }
   .section-1-main .bg-cover .content-main {
-    padding: 50px 0;
+    padding: 10% 0;
     color: #fff;
     text-align: center;
-    position: relative;
-    h2: 1st-child;
-      h2-font: 4em "OpenSansRegular"; }
+    position: relative; }
+    .section-1-main .bg-cover .content-main h2 {
+      padding-top: 20px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font: 2.8em "OpenSansRegular"; }
     .section-1-main .bg-cover .content-main h1 {
       text-transform: uppercase;
-      font: 3em "OpenSansSemiBold";
-      color: #29bff2; }
+      font: 4em "OpenSansSemiBold";
+      color: #29bff2;
+      padding-top: 40px; }
+    .section-1-main .bg-cover .content-main .rowButtons {
+      display: inline-block;
+      width: 100%;
+      padding-top: 40px; }
+      .section-1-main .bg-cover .content-main .rowButtons .ask {
+        text-align: right;
+        padding-right: 40px; }
+      .section-1-main .bg-cover .content-main .rowButtons .test {
+        text-align: left;
+        padding-left: 40px; }
+      .section-1-main .bg-cover .content-main .rowButtons .ask a, .section-1-main .bg-cover .content-main .rowButtons .test a {
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 0;
+        background: #29bff2;
+        padding: 16px 40px;
+        text-transform: uppercase; }
+      .section-1-main .bg-cover .content-main .rowButtons .ask a:hover, .section-1-main .bg-cover .content-main .rowButtons .test a:hover {
+        background: #000;
+        color: #fff;
+        border: 2px solid #29bff2; }
 
 /*# sourceMappingURL=all.css.map */
