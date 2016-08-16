@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
     var wh = $(window).height();
     var height = function(){
@@ -8,3 +9,4 @@ $(document).ready(function(){
         height();
     });
 });
+    */
