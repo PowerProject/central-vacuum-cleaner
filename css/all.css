@@ -1,6 +1,17 @@
 body {
   font: 14px "OpenSansRegular", sans-serif; }
 
+header {
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  box-shadow: 0 3px 18px #444;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.7); }
+  header .logo img {
+    max-height: 78px;
+    padding: 10px 0; }
+
 .bg-cover {
   background-image: url("../bg.jpg");
   position: relative;
@@ -36,7 +47,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.4); }
+  background: rgba(0, 0, 0, 0.5); }
 
 .content-main {
   padding: 50px 30px;
