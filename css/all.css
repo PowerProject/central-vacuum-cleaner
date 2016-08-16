@@ -9,11 +9,31 @@ header .navbar {
   display: inline-block;
   width: 100%;
   margin-bottom: 0;
-  background: rgba(255, 255, 255, 0.5); }
+  background: rgba(255, 255, 255, 0.7);
+  min-height: 72px; }
+  @media (max-width: 991px) {
+    header .navbar {
+      min-height: 52px; } }
+  @media (min-width: 990px) {
+    header .navbar .navbar-header .navbar-toggle {
+      display: none; } }
   header .navbar .navbar-header a.navbar-brand {
     padding: 0; }
     header .navbar .navbar-header a.navbar-brand img {
-      max-height: 72px; }
+      max-height: 64px;
+      padding-top: 6px;
+      padding-left: 14px; }
+      @media (max-width: 991px) {
+        header .navbar .navbar-header a.navbar-brand img {
+          max-height: 46px; } }
+  header .navbar .navbar-right li a {
+    color: #444;
+    padding-top: 24px;
+    text-transform: uppercase; }
+    header .navbar .navbar-right li a:hover {
+      color: #29bff2; }
+  header .navbar .navbar-right li .active-link {
+    color: #29bff2; }
 
 .bg-cover {
   background-image: url("../bg.jpg");
