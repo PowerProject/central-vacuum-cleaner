@@ -5,15 +5,21 @@ body {
 }
 
 header {
-  position: fixed;
-  @include inline-block;
-  @include box-shadow;
-  z-index: 2;
-  background: rgba(255,255,255,0.7);
-  .logo {
-    img {
-      max-height: 78px;
-      padding: 10px 0;
+  .navbar {
+    position: fixed;
+    border: none;
+    z-index: 2;
+    @include box-shadow;
+    @include inline-block;
+    margin-bottom: 0;
+    background: rgba(255,255,255,0.5);
+    .navbar-header {
+      a.navbar-brand {
+        padding: 0;
+        img {
+          max-height: 72px;
+        }
+      }
     }
   }
 }
