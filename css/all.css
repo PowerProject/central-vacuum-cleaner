@@ -1,4 +1,49 @@
 body {
   font: 14px "OpenSansRegular", sans-serif; }
 
+.bg-cover {
+  background-image: url("../bg.jpg");
+  position: relative;
+  z-index: 1;
+  background-size: cover; }
+
+#video-bg {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+#video-bg .video-bg__video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../bg.jpg") no-repeat center;
+  background-size: cover;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  overflow: hidden; }
+
+#video-bg:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); }
+
+.content-main {
+  padding: 50px 30px;
+  color: #fff;
+  text-align: center; }
+
+.content-main h2 {
+  line-height: 80px; }
+
 /*# sourceMappingURL=all.css.map */
