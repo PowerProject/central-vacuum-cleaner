@@ -2,55 +2,62 @@ body {
   font: 14px "OpenSansRegular", sans-serif; }
 
 /* ----------------HEADER ------------------*/
-header .navbar {
-  position: fixed;
-  border: none;
-  z-index: 2;
-  box-shadow: 0 3px 18px #444;
+header {
+  z-index: 999;
   display: inline-block;
   width: 100%;
-  margin-bottom: 0;
-  background: rgba(255, 255, 255, 0.7);
-  min-height: 72px; }
-  @media (max-width: 991px) {
-    header .navbar {
-      min-height: 52px; } }
-  @media (min-width: 990px) {
-    header .navbar .navbar-header .navbar-toggle {
-      display: none; } }
-  header .navbar .navbar-header a.navbar-brand {
-    padding: 0; }
-    header .navbar .navbar-header a.navbar-brand img {
-      max-height: 64px;
-      padding-top: 6px;
-      padding-left: 14px; }
-      @media (max-width: 991px) {
-        header .navbar .navbar-header a.navbar-brand img {
-          max-height: 46px; } }
-  header .navbar .navbar-right li a {
-    color: #444;
-    padding-top: 24px;
-    text-transform: uppercase; }
-    header .navbar .navbar-right li a:hover {
+  position: fixed; }
+  header .navbar {
+    border: none;
+    z-index: 999;
+    box-shadow: 0 3px 18px #444;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 0;
+    background: rgba(255, 255, 255, 0.7);
+    min-height: 72px; }
+    @media (max-width: 991px) {
+      header .navbar {
+        min-height: 52px; } }
+    @media (min-width: 990px) {
+      header .navbar .navbar-header .navbar-toggle {
+        display: none; } }
+    header .navbar .navbar-header a.navbar-brand {
+      padding: 0; }
+      header .navbar .navbar-header a.navbar-brand:focus {
+        outline: none; }
+      header .navbar .navbar-header a.navbar-brand img {
+        max-height: 64px;
+        padding-top: 6px;
+        padding-left: 14px; }
+        @media (max-width: 991px) {
+          header .navbar .navbar-header a.navbar-brand img {
+            max-height: 46px; } }
+    header .navbar .navbar-right li a {
+      color: #444;
+      padding-top: 24px;
+      text-transform: uppercase; }
+      header .navbar .navbar-right li a:hover {
+        color: #29bff2; }
+    header .navbar .navbar-right li .active-link {
       color: #29bff2; }
-  header .navbar .navbar-right li .active-link {
-    color: #29bff2; }
 
 /* ----------------SECTION 1 (MAIN) ------------------*/
-.section-1-main .bg-cover {
+.section-1-main.bg-cover {
   background-image: url("../bg.jpg");
   position: relative;
   z-index: 1;
   background-size: cover; }
-  .section-1-main .bg-cover #video-bg {
+  .section-1-main.bg-cover #video-bg {
     position: absolute;
+    height: 100%;
     z-index: -1;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     overflow: hidden; }
-    .section-1-main .bg-cover #video-bg .video-bg__video {
+    .section-1-main.bg-cover #video-bg .video-bg__video {
       position: fixed;
       top: 0;
       left: 0;
@@ -61,7 +68,7 @@ header .navbar {
       width: auto;
       height: auto;
       overflow: hidden; }
-    .section-1-main .bg-cover #video-bg:after {
+    .section-1-main.bg-cover #video-bg:after {
       content: "";
       display: block;
       width: 100%;
@@ -70,17 +77,25 @@ header .navbar {
       top: 0;
       left: 0;
       background: rgba(0, 0, 0, 0.5); }
-  .section-1-main .bg-cover .content-main {
-    padding: 10% 0;
+  .section-1-main.bg-cover .content-main {
     color: #fff;
     text-align: center;
-    position: relative; }
-    .section-1-main .bg-cover .content-main h2 {
+    position: relative;
+    height: 100%;
+    width: 75%;
+    left: 12.5%; }
+    .section-1-main.bg-cover .content-main .row {
+      height: 30%; }
+    .section-1-main.bg-cover .content-main h2 {
       padding-top: 20px;
       text-transform: uppercase;
       font-weight: 600;
-      font: 2.8em "OpenSansRegular"; }
-    .section-1-main .bg-cover .content-main h1 {
+      font: 2.8em "OpenSansRegular";
+      position: absolute;
+      width: 100%;
+      left: 0%;
+      top: 45%; }
+    .section-1-main.bg-cover .content-main h1 {
       text-transform: uppercase;
       font: 4em "OpenSansSemiBold";
       color: white;
@@ -89,18 +104,23 @@ header .navbar {
       border: 2px solid rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 14px;
       text-shadow: 0.1px 1px 1px #000;
-      margin-top: 40px; }
-    .section-1-main .bg-cover .content-main .rowButtons {
-      display: inline-block;
+      margin-top: 0px;
+      position: absolute;
       width: 100%;
-      padding-top: 40px; }
-      .section-1-main .bg-cover .content-main .rowButtons .ask {
+      left: 0%;
+      top: 32%; }
+    .section-1-main.bg-cover .content-main .rowButtons {
+      position: absolute;
+      width: 100%;
+      left: 0%;
+      top: 60%; }
+      .section-1-main.bg-cover .content-main .rowButtons .ask {
         text-align: right;
         padding-right: 40px; }
-      .section-1-main .bg-cover .content-main .rowButtons .test {
+      .section-1-main.bg-cover .content-main .rowButtons .test {
         text-align: left;
         padding-left: 40px; }
-      .section-1-main .bg-cover .content-main .rowButtons .ask a, .section-1-main .bg-cover .content-main .rowButtons .test a {
+      .section-1-main.bg-cover .content-main .rowButtons .ask a, .section-1-main.bg-cover .content-main .rowButtons .test a {
         border: 2px solid #000;
         color: #fff;
         border-radius: 0;
@@ -108,7 +128,23 @@ header .navbar {
         padding: 16px 40px;
         text-transform: uppercase;
         box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }
-      .section-1-main .bg-cover .content-main .rowButtons .ask a:hover, .section-1-main .bg-cover .content-main .rowButtons .test a:hover {
+      .section-1-main.bg-cover .content-main .rowButtons .ask a:hover, .section-1-main.bg-cover .content-main .rowButtons .test a:hover {
         background: #15bdf4; }
+
+/* ----------------SECTION 2 (DESCRIPTION) ------------------*/
+.section-2-description {
+  background: #fff;
+  margin-top: 4%; }
+  .section-2-description h2 {
+    color: #444;
+    text-transform: uppercase;
+    text-align: center;
+    font: 2.5em "OpenSansSemiBold";
+    margin-bottom: 8%; }
+  .section-2-description .description-text p {
+    font: 1.3em "OpenSansRegular";
+    line-height: 1.8em; }
+  .section-2-description .description-text .text-margin-top {
+    margin-top: 5%; }
 
 /*# sourceMappingURL=all.css.map */

@@ -5,10 +5,12 @@ body {
 }
 /* ----------------HEADER ------------------*/
 header {
+  z-index: 999;
+  @include inline-block;
+  position: fixed;
   .navbar {
-    position: fixed;
     border: none;
-    z-index: 2;
+    z-index: 999;
     @include box-shadow;
     @include inline-block;
     margin-bottom: 0;
@@ -25,10 +27,14 @@ header {
       }
       a.navbar-brand {
         padding: 0;
+        &:focus {
+          outline: none;
+        }
         img {
           max-height: 64px;
           padding-top: 6px;
           padding-left: 14px;
+
           @media (max-width: 991px) {
             max-height: 46px;
           }
@@ -54,14 +60,14 @@ header {
 }
 
 /* ----------------SECTION 1 (MAIN) ------------------*/
-.section-1-main {
-  .bg-cover{
+.section-1-main.bg-cover{
     background-image:url("../bg.jpg");
     position:relative;
     z-index:1;
     background-size: cover;
     #video-bg{
       position:absolute;
+      height: 100%;
       z-index:-1;
       left:0;
       right:0;
@@ -69,7 +75,7 @@ header {
       bottom:0;
       overflow:hidden;
       .video-bg__video{
-        position:fixed;
+        position: fixed;
         top:0;
         left:0;
         background:url("../bg.jpg") no-repeat center;
@@ -92,15 +98,24 @@ header {
       }
     }
     .content-main {
-      padding: 10% 0;
       color: $white;
       text-align: center;
       position: relative;
+      height: 100%;
+      width: 75%;
+      left: 12.5%;
+      .row {
+        height: 30%;
+      }
       h2{
           padding-top:20px;
           text-transform: uppercase;
           font-weight: 600;
           font: 2.8em $OpSans-Reg;
+          position: absolute;
+          width: 100%;
+          left: 0%;
+          top: 45%;
       }
       h1 {
         text-transform: uppercase;
@@ -111,12 +126,17 @@ header {
         border: 2px solid rgba(0,0,0,0.5);
         box-shadow: 0 0 14px ;
         text-shadow: 0.1px 1px 1px $black;
-        margin-top: 40px;
-
+        margin-top: 0px;
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 32%;
       }
       .rowButtons {
-        @include inline-block;
-        padding-top: 40px;
+        position: absolute;
+        width: 100%;
+        left: 0%;
+        top: 60%;
         .ask {
           text-align: right;
           padding-right: 40px;
@@ -134,15 +154,39 @@ header {
           text-transform: uppercase;
           box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
-          .ask a:hover, .test a:hover {
-            background: rgba(21, 189, 244, 1);
-          }
-
-          }
+        .ask a:hover, .test a:hover {
+          background: rgba(21, 189, 244, 1);
         }
       }
+    }
+  }
+
+
+/* ----------------SECTION 2 (DESCRIPTION) ------------------*/
+.section-2-description {
+  background: $white;
+  margin-top: 4%;
+  h2 {
+    color: $dark-grey;
+    text-transform: uppercase;
+    text-align: center;
+    font: 2.5em $OpSans-SemiBold;
+    margin-bottom: 8%;
+  }
+  .description-text {
+    p {
+      font: 1.3em $OpSans-Reg;
+      line-height: 1.8em;
+    }
+    .text {
 
     }
+    .text-margin-top {
+      margin-top: 5%;
+
+    }
+  }
+}
 
 
 
