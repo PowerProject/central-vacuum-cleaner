@@ -83,8 +83,13 @@ header .navbar {
     .section-1-main .bg-cover .content-main h1 {
       text-transform: uppercase;
       font: 4em "OpenSansSemiBold";
-      color: #29bff2;
-      padding-top: 40px; }
+      color: white;
+      padding: 22px;
+      background: rgba(21, 189, 244, 0.6);
+      border: 2px solid rgba(0, 0, 0, 0.5);
+      box-shadow: 0 0 14px;
+      text-shadow: 0.1px 1px 1px #000;
+      margin-top: 40px; }
     .section-1-main .bg-cover .content-main .rowButtons {
       display: inline-block;
       width: 100%;
@@ -96,15 +101,14 @@ header .navbar {
         text-align: left;
         padding-left: 40px; }
       .section-1-main .bg-cover .content-main .rowButtons .ask a, .section-1-main .bg-cover .content-main .rowButtons .test a {
-        border: 2px solid #fff;
+        border: 2px solid #000;
         color: #fff;
         border-radius: 0;
-        background: #29bff2;
+        background: rgba(21, 189, 244, 0.6);
         padding: 16px 40px;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }
       .section-1-main .bg-cover .content-main .rowButtons .ask a:hover, .section-1-main .bg-cover .content-main .rowButtons .test a:hover {
-        background: #000;
-        color: #fff;
-        border: 2px solid #29bff2; }
+        background: #15bdf4; }
 
 /*# sourceMappingURL=all.css.map */

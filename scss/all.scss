@@ -105,8 +105,13 @@ header {
       h1 {
         text-transform: uppercase;
         font: 4em $OpSans-SemiBold;
-        color: $blue;
-        padding-top: 40px;
+        color: rgb(255, 255, 255);
+        padding: 22px;
+        background: rgba(21, 189, 244, 0.6);
+        border: 2px solid rgba(0,0,0,0.5);
+        box-shadow: 0 0 14px ;
+        text-shadow: 0.1px 1px 1px $black;
+        margin-top: 40px;
 
       }
       .rowButtons {
@@ -121,17 +126,16 @@ header {
           padding-left: 40px;
         }
         .ask a, .test a {
-          border: 2px solid $white;
+          border: 2px solid $black;
           color: $white;
           border-radius: 0;
-          background: $blue;
+          background: rgba(21, 189, 244, 0.6);
           padding: 16px 40px;
           text-transform: uppercase;
+          box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
         }
           .ask a:hover, .test a:hover {
-            background: #000;
-            color: $white;
-            border: 2px solid $blue;
+            background: rgba(21, 189, 244, 1);
           }
 
           }
