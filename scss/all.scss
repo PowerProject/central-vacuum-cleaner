@@ -63,8 +63,9 @@ header {
 .section-1-main.bg-cover{
     background-image:url("../bg.jpg");
     position:relative;
-    z-index:1;
+    z-index:10;
     background-size: cover;
+    box-shadow: 0 11px 28px rgba(0,0,0,0.4);
     #video-bg{
       position:absolute;
       height: 100%;
@@ -170,9 +171,12 @@ header {
 
 /* ----------------SECTION 2 (DESCRIPTION) ------------------*/
 .section-2-description {
+  position: relative;
   background: $white;
-  margin-top: 4%;
-  margin-bottom: 5%;
+  padding-top: 4%;
+  padding-bottom: 5%;
+  box-shadow: 0 11px 28px rgba(0,0,0,0.4);
+  z-index: 9;
   h2 {
     color: $dark-grey;
     text-transform: uppercase;
@@ -200,7 +204,10 @@ header {
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
   background: $blue;
-  padding: 4% 0;
+  padding: 4% 0 3% 0;
+  position: relative;
+  box-shadow: 0 8px 23px rgba(255,255,255,0.4);
+  z-index: 8;
   .advantages {
     h2 {
       color: $dark-grey;
@@ -219,8 +226,26 @@ header {
           font: 1.5em $OpSans-Reg;
           line-height: 1.8em;
           margin-top: 15px;
+          padding-bottom: 30px;
         }
       }
+    }
+  }
+}
+
+/* ----------------SECTION 4 (MANUFACTURER) ------------------*/
+.section-4-manufacturer {
+  position: relative;
+  z-index: 7;
+  background: $black;
+  padding-top: 4%;
+  .manufacturer {
+    h2 {
+      color: $white;
+      text-transform: uppercase;
+      font: 2.5em $OpSans-SemiBold;
+      text-align: center;
+      padding-bottom: 5%;
     }
   }
 }

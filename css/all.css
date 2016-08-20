@@ -46,8 +46,9 @@ header {
 .section-1-main.bg-cover {
   background-image: url("../bg.jpg");
   position: relative;
-  z-index: 1;
-  background-size: cover; }
+  z-index: 10;
+  background-size: cover;
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4); }
   .section-1-main.bg-cover #video-bg {
     position: absolute;
     height: 100%;
@@ -138,9 +139,12 @@ header {
 
 /* ----------------SECTION 2 (DESCRIPTION) ------------------*/
 .section-2-description {
+  position: relative;
   background: #fff;
-  margin-top: 4%;
-  margin-bottom: 5%; }
+  padding-top: 4%;
+  padding-bottom: 5%;
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4);
+  z-index: 9; }
   .section-2-description h2 {
     color: #444;
     text-transform: uppercase;
@@ -160,7 +164,10 @@ header {
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
   background: #29bff2;
-  padding: 4% 0; }
+  padding: 4% 0 3% 0;
+  position: relative;
+  box-shadow: 0 8px 23px rgba(255, 255, 255, 0.4);
+  z-index: 8; }
   .section-3-advantages .advantages h2 {
     color: #444;
     text-transform: uppercase;
@@ -177,6 +184,20 @@ header {
       .section-3-advantages .advantages ul li p {
         font: 1.5em "OpenSansRegular";
         line-height: 1.8em;
-        margin-top: 15px; }
+        margin-top: 15px;
+        padding-bottom: 30px; }
+
+/* ----------------SECTION 4 (MANUFACTURER) ------------------*/
+.section-4-manufacturer {
+  position: relative;
+  z-index: 7;
+  background: #000;
+  padding-top: 4%; }
+  .section-4-manufacturer .manufacturer h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font: 2.5em "OpenSansSemiBold";
+    text-align: center;
+    padding-bottom: 5%; }
 
 /*# sourceMappingURL=all.css.map */
