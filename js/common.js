@@ -18,6 +18,7 @@ $(document).ready(function(){
             $('.section-1-main .video-bg__video').css('position', 'fixed');
             $('header .navbar').css('background', 'rgba(255,255,255,0.7');
         }
+        
 
     });
 

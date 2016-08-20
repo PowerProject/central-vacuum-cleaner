@@ -98,17 +98,17 @@ header {
       }
     }
     .content-main {
+      position: relative;
       color: $white;
       text-align: center;
-      position: relative;
       height: 100%;
       width: 75%;
-      left: 12.5%;
+      margin: 0 auto;
       .row {
         height: 30%;
       }
-      h2{
-          padding-top:20px;
+      p{
+          padding-top:40px;
           text-transform: uppercase;
           font-weight: 600;
           font: 2.8em $OpSans-Reg;
@@ -153,9 +153,15 @@ header {
           padding: 16px 40px;
           text-transform: uppercase;
           box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+          transition: 0.4s all ease;
+          -o-transition: 0.4s all ease;
+          -moz-transition: 0.4s all ease;
+          -webkit-transition: 0.4s all ease;
         }
         .ask a:hover, .test a:hover {
           background: rgba(21, 189, 244, 1);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+
         }
       }
     }
@@ -177,6 +183,10 @@ header {
     p {
       font: 1.3em $OpSans-Reg;
       line-height: 1.8em;
+    }
+    p.description-head {
+      text-transform: uppercase;
+      font-size: 1.5em;
     }
     .text {
 

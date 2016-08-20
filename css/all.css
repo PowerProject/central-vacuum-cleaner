@@ -78,16 +78,16 @@ header {
       left: 0;
       background: rgba(0, 0, 0, 0.5); }
   .section-1-main.bg-cover .content-main {
+    position: relative;
     color: #fff;
     text-align: center;
-    position: relative;
     height: 100%;
     width: 75%;
-    left: 12.5%; }
+    margin: 0 auto; }
     .section-1-main.bg-cover .content-main .row {
       height: 30%; }
-    .section-1-main.bg-cover .content-main h2 {
-      padding-top: 20px;
+    .section-1-main.bg-cover .content-main p {
+      padding-top: 40px;
       text-transform: uppercase;
       font-weight: 600;
       font: 2.8em "OpenSansRegular";
@@ -127,9 +127,14 @@ header {
         background: rgba(21, 189, 244, 0.6);
         padding: 16px 40px;
         text-transform: uppercase;
-        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8); }
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease; }
       .section-1-main.bg-cover .content-main .rowButtons .ask a:hover, .section-1-main.bg-cover .content-main .rowButtons .test a:hover {
-        background: #15bdf4; }
+        background: #15bdf4;
+        box-shadow: 0 0 20px white; }
 
 /* ----------------SECTION 2 (DESCRIPTION) ------------------*/
 .section-2-description {
@@ -144,6 +149,9 @@ header {
   .section-2-description .description-text p {
     font: 1.3em "OpenSansRegular";
     line-height: 1.8em; }
+  .section-2-description .description-text p.description-head {
+    text-transform: uppercase;
+    font-size: 1.5em; }
   .section-2-description .description-text .text-margin-top {
     margin-top: 5%; }
 
