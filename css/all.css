@@ -139,7 +139,8 @@ header {
 /* ----------------SECTION 2 (DESCRIPTION) ------------------*/
 .section-2-description {
   background: #fff;
-  margin-top: 4%; }
+  margin-top: 4%;
+  margin-bottom: 5%; }
   .section-2-description h2 {
     color: #444;
     text-transform: uppercase;
@@ -151,8 +152,31 @@ header {
     line-height: 1.8em; }
   .section-2-description .description-text p.description-head {
     text-transform: uppercase;
-    font-size: 1.5em; }
+    font-size: 1.5em;
+    color: #29bff2; }
   .section-2-description .description-text .text-margin-top {
     margin-top: 5%; }
+
+/* ----------------SECTION 3 (ADVANTAGES) ------------------*/
+.section-3-advantages {
+  background: #29bff2;
+  padding: 4% 0; }
+  .section-3-advantages .advantages h2 {
+    color: #444;
+    text-transform: uppercase;
+    font: 2.5em "OpenSansSemiBold";
+    text-align: center; }
+  .section-3-advantages .advantages ul {
+    padding: 5% 0 0 0;
+    display: inline-block;
+    width: 100%; }
+    .section-3-advantages .advantages ul li {
+      list-style: none;
+      float: left;
+      text-align: center; }
+      .section-3-advantages .advantages ul li p {
+        font: 1.5em "OpenSansRegular";
+        line-height: 1.8em;
+        margin-top: 15px; }
 
 /*# sourceMappingURL=all.css.map */

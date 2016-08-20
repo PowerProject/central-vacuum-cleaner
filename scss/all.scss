@@ -172,6 +172,7 @@ header {
 .section-2-description {
   background: $white;
   margin-top: 4%;
+  margin-bottom: 5%;
   h2 {
     color: $dark-grey;
     text-transform: uppercase;
@@ -187,13 +188,39 @@ header {
     p.description-head {
       text-transform: uppercase;
       font-size: 1.5em;
+      color: $blue;
     }
-    .text {
 
-    }
     .text-margin-top {
       margin-top: 5%;
+    }
+  }
+}
 
+/* ----------------SECTION 3 (ADVANTAGES) ------------------*/
+.section-3-advantages {
+  background: $blue;
+  padding: 4% 0;
+  .advantages {
+    h2 {
+      color: $dark-grey;
+      text-transform: uppercase;
+      font: 2.5em $OpSans-SemiBold;
+      text-align: center;
+    }
+    ul {
+      padding: 5% 0 0 0;
+      @include inline-block;
+      li {
+        list-style: none;
+        float: left;
+        text-align: center;
+        p {
+          font: 1.5em $OpSans-Reg;
+          line-height: 1.8em;
+          margin-top: 15px;
+        }
+      }
     }
   }
 }
