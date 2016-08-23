@@ -220,7 +220,7 @@ header {
   position: relative;
   z-index: 6;
   background: #fff;
-  padding-top: 4%; }
+  padding: 4% 0 5% 0; }
   .section-5-price h2 {
     color: #444;
     text-transform: uppercase;
@@ -311,5 +311,49 @@ header {
     zoom: 1; }
 
 /* ----------------SECTION 6 (TEST) ------------------*/
+.section-6-test {
+  background: url("../img/test.png");
+  background-size: cover;
+  padding: 4% 0 5%; }
+  .section-6-test .test h2 {
+    color: #29bff2;
+    text-transform: uppercase;
+    font: 2.5em "OpenSansSemiBold";
+    text-align: center;
+    padding-bottom: 5%; }
+  .section-6-test .test .contact-form {
+    background: url("../img/Vacuum-wooden-floor.jpg");
+    border-radius: 8px; }
+    .section-6-test .test .contact-form form p {
+      font: 2em OpenSansRegular;
+      color: #000;
+      text-align: center;
+      padding-top: 2%; }
+    .section-6-test .test .contact-form form input {
+      width: 90%;
+      margin: 6% auto 0;
+      height: 46px;
+      font: 1.2rem "OpenSansLight"; }
+    .section-6-test .test .contact-form form button {
+      display: block;
+      margin: 9% auto 10%;
+      background: rgba(21, 189, 244, 0.6);
+      padding: 14px 62px;
+      border: 1px solid rgba(0, 0, 0, 0.8);
+      border-radius: 0;
+      text-transform: uppercase;
+      color: #fff;
+      font: 1.2em "OpenSansRegular";
+      box-shadow: 0 0px 8px #fff; }
+      .section-6-test .test .contact-form form button:hover {
+        background: #29bff2; }
+  .section-6-test .test .text-test {
+    padding-left: 8%; }
+    .section-6-test .test .text-test p {
+      color: #fff;
+      font: 2em "OpenSansRegular";
+      line-height: 2em; }
+      .section-6-test .test .text-test p span {
+        color: #29bff2; }
 
 /*# sourceMappingURL=all.css.map */

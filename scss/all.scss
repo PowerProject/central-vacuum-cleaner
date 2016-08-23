@@ -266,7 +266,7 @@ header {
   position: relative;
   z-index: 6;
   background: $white;
-  padding-top: 4%;
+  padding: 4% 0 5% 0;
   h2 {
     @include h2($dark-grey);
   }
@@ -401,6 +401,62 @@ header {
 }
 
 /* ----------------SECTION 6 (TEST) ------------------*/
+.section-6-test {
+  background: url("../img/test.png");
+  background-size: cover;
+  padding: 4% 0 5%;
+  .test {
+    h2 {
+      @include h2($blue);
+    }
+  .contact-form {
+    background: url("../img/Vacuum-wooden-floor.jpg");
+    border-radius: 8px;
+    form {
+      p {
+        font: 2em OpenSansRegular;
+        color: $black;
+        text-align: center;
+        padding-top: 2%;
+      }
+      input {
+        width: 90%;
+        margin: 6% auto 0;
+        height:46px;
+        font: 1.2rem $OpSans-Light;
+      }
+      button {
+        display: block;
+        margin: 9% auto 10%;
+        background: rgba(21, 189, 244, 0.6);
+        padding: 14px 62px;
+        border: 1px solid rgba(0,0,0,0.8);
+        border-radius: 0;
+        text-transform: uppercase;
+        color: $white;
+        font: 1.2em $OpSans-Reg;
+        box-shadow: 0 0px 8px #fff;
+        &:hover {
+          background: $blue;
+        }
+      }
+    }
+  }
+  .text-test {
+    padding-left: 8%;
+    p {
+      color: $white;
+      font: 2em $OpSans-Reg;
+      line-height: 2em;
+      span {
+        color: $blue;
+      }
+    }
+  }
+
+
+  }
+}
 
 
 
