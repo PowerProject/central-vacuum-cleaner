@@ -10,3 +10,12 @@
   -moz-box-shadow: 0 3px 18px #444;
   box-shadow: 0 3px 18px #444;
 }
+
+//h2
+@mixin h2($color) {
+  color: $color;
+  text-transform: uppercase;
+  font: 2.5em "OpenSansSemiBold";
+  text-align: center;
+  padding-bottom: 5%;
+}

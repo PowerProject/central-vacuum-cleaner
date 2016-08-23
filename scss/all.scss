@@ -1,8 +1,11 @@
 @import "core.scss";
 
+html {
+  font-size: 14px;
+}
 body {
   font: 14px $OpSans-Reg, sans-serif;
-}
+ }
 /* ----------------HEADER ------------------*/
 header {
   z-index: 999;
@@ -112,7 +115,7 @@ header {
           padding-top:40px;
           text-transform: uppercase;
           font-weight: 600;
-          font: 2.8em $OpSans-Reg;
+          font: 2.8rem $OpSans-Reg;
           position: absolute;
           width: 100%;
           left: 0%;
@@ -120,7 +123,7 @@ header {
       }
       h1 {
         text-transform: uppercase;
-        font: 4em $OpSans-SemiBold;
+        font: 4rem $OpSans-SemiBold;
         color: rgb(255, 255, 255);
         padding: 22px;
         background: rgba(21, 189, 244, 0.6);
@@ -182,17 +185,17 @@ header {
     color: $dark-grey;
     text-transform: uppercase;
     text-align: center;
-    font: 2.5em $OpSans-SemiBold;
+    font: 2.5rem $OpSans-SemiBold;
     margin-bottom: 8%;
   }
   .description-text {
     p {
-      font: 1.3em $OpSans-Reg;
+      font: 1.3rem $OpSans-Reg;
       line-height: 1.8em;
     }
     p.description-head {
       text-transform: uppercase;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       color: $blue;
     }
 
@@ -212,20 +215,16 @@ header {
   z-index: 8;
   .advantages {
     h2 {
-      color: $dark-grey;
-      text-transform: uppercase;
-      font: 2.5em $OpSans-SemiBold;
-      text-align: center;
+     @include h2($dark-grey);
     }
     ul {
-      padding: 5% 0 0 0;
       @include inline-block;
       li {
         list-style: none;
         float: left;
         text-align: center;
         p {
-          font: 1.5em $OpSans-Reg;
+          font: 1.5rem $OpSans-Reg;
           line-height: 1.8em;
           margin-top: 15px;
           padding-bottom: 30px;
@@ -257,11 +256,7 @@ header {
   padding-top: 4%;
   .manufacturer {
     h2 {
-      color: $white;
-      text-transform: uppercase;
-      font: 2.5em $OpSans-SemiBold;
-      text-align: center;
-      padding-bottom: 5%;
+     @include h2($white)
     }
   }
 }
@@ -272,7 +267,140 @@ header {
   z-index: 6;
   background: $white;
   padding-top: 4%;
+  h2 {
+    @include h2($dark-grey);
+  }
+
+  #pricing-table {
+    text-align: center;
+    margin-top: 3%;
+    .plan {
+      font: 1rem $OpSans-Reg;
+      text-shadow: 0 1px rgba(255,255,255,.8);
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #333;
+      padding: 20px;
+      float: left;
+      position: relative;
+      h3 {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px;
+        margin: -20px -20px 50px -20px;
+        background-color: #eee;
+        span {
+          display: block;
+          font: bold 1.3rem/6.5rem Georgia, Serif;
+          color: $blue;
+          background: #fff;
+          border: 5px solid #fff;
+          height: 100px;
+          width: 100px;
+          margin: 10px auto -65px;
+          -moz-border-radius: 100px;
+          -webkit-border-radius: 100px;
+          border-radius: 100%;
+          -moz-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+          -webkit-box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+          box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset;
+        }
+      }
+      a.signup {
+        position: relative;
+        padding: 8px 20px;
+        margin: 20px 0 0 0;
+        color: #fff;
+        font: bold 1.2rem $OpSans-Reg;
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        background-color: rgba(41,191,242, 0.9);
+        -moz-border-radius: 3px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        text-shadow: 0 1px 0 rgba(0,0,0,.3);
+        -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+        -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, .5), 0 2px 0 rgba(0, 0, 0, .7);
+        &:hover {
+          background-color: $blue;
+        }
+        &:active, &:focus {
+          background: $blue;
+          top: 2px;
+          -moz-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+          -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+          box-shadow: 0 0 3px rgba(0, 0, 0, .7) inset;
+        }
+      }
+      ul {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none;
+        li {
+          border-top: 1px solid #ddd;
+          padding: 10px 0;
+        }
+      }
+      &:nth-child(1) {
+        -moz-border-radius: 5px 0 0 5px;
+        -webkit-border-radius: 5px 0 0 5px;
+        border-radius: 5px 0 0 5px;
+        h3 {
+          -moz-border-radius: 5px 0 0 0;
+          -webkit-border-radius: 5px 0 0 0;
+          border-radius: 5px 0 0 0;
+        }
+      }
+      &:nth-child(3) {
+        -moz-border-radius: 0 5px 5px 0;
+        -webkit-border-radius: 0 5px 5px 0;
+        border-radius: 0 5px 5px 0;
+        h3 {
+          -moz-border-radius: 0 5px 0 0;
+          -webkit-border-radius: 0 5px 0 0;
+          border-radius: 0 5px 0 0;
+        }
+      }
+    }
+    #most-popular {
+      z-index: 2;
+      top: -13px;
+      border: 2px solid $blue;
+      padding: 30px 20px;
+      -moz-border-radius: 7px;
+      -webkit-border-radius: 7px;
+      border-radius: 7px;
+      -moz-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+      -webkit-box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+      box-shadow: 20px 0 10px -10px rgba(0, 0, 0, .15), -20px 0 10px -10px rgba(0, 0, 0, .15);
+      h3 {
+        background-color: $blue;
+        margin-top: -30px;
+        padding-top: 30px;
+        -moz-border-radius: 5px 5px 0 0;
+        -webkit-border-radius: 5px 5px 0 0;
+        border-radius: 5px 5px 0 0;
+      }
+    }
+  }
+
+  .clear:before, .clear:after {
+    content:"";
+    display:table
+  }
+
+  .clear:after {
+    clear:both
+  }
+
+  .clear{
+    zoom:1
+  }
 }
+
+/* ----------------SECTION 6 (TEST) ------------------*/
 
 
 

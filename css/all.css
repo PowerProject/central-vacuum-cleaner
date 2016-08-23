@@ -1,3 +1,6 @@
+html {
+  font-size: 14px; }
+
 body {
   font: 14px "OpenSansRegular", sans-serif; }
 
@@ -91,14 +94,14 @@ header {
       padding-top: 40px;
       text-transform: uppercase;
       font-weight: 600;
-      font: 2.8em "OpenSansRegular";
+      font: 2.8rem "OpenSansRegular";
       position: absolute;
       width: 100%;
       left: 0%;
       top: 45%; }
     .section-1-main.bg-cover .content-main h1 {
       text-transform: uppercase;
-      font: 4em "OpenSansSemiBold";
+      font: 4rem "OpenSansSemiBold";
       color: white;
       padding: 22px;
       background: rgba(21, 189, 244, 0.6);
@@ -150,14 +153,14 @@ header {
     color: #444;
     text-transform: uppercase;
     text-align: center;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     margin-bottom: 8%; }
   .section-2-description .description-text p {
-    font: 1.3em "OpenSansRegular";
+    font: 1.3rem "OpenSansRegular";
     line-height: 1.8em; }
   .section-2-description .description-text p.description-head {
     text-transform: uppercase;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     color: #29bff2; }
   .section-2-description .description-text .text-margin-top {
     margin-top: 5%; }
@@ -174,9 +177,9 @@ header {
     color: #444;
     text-transform: uppercase;
     font: 2.5em "OpenSansSemiBold";
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 5%; }
   .section-3-advantages .advantages ul {
-    padding: 5% 0 0 0;
     display: inline-block;
     width: 100%; }
     .section-3-advantages .advantages ul li {
@@ -184,7 +187,7 @@ header {
       float: left;
       text-align: center; }
       .section-3-advantages .advantages ul li p {
-        font: 1.5em "OpenSansRegular";
+        font: 1.5rem "OpenSansRegular";
         line-height: 1.8em;
         margin-top: 15px;
         padding-bottom: 30px; }
@@ -218,5 +221,95 @@ header {
   z-index: 6;
   background: #fff;
   padding-top: 4%; }
+  .section-5-price h2 {
+    color: #444;
+    text-transform: uppercase;
+    font: 2.5em "OpenSansSemiBold";
+    text-align: center;
+    padding-bottom: 5%; }
+  .section-5-price #pricing-table {
+    text-align: center;
+    margin-top: 3%; }
+    .section-5-price #pricing-table .plan {
+      font: 1rem "OpenSansRegular";
+      text-shadow: 0 1px rgba(255, 255, 255, 0.8);
+      background: #fff;
+      border: 1px solid #ddd;
+      color: #333;
+      padding: 20px;
+      float: left;
+      position: relative; }
+      .section-5-price #pricing-table .plan h3 {
+        font-size: 20px;
+        font-weight: normal;
+        padding: 20px;
+        margin: -20px -20px 50px -20px;
+        background-color: #eee; }
+        .section-5-price #pricing-table .plan h3 span {
+          display: block;
+          font: bold 1.3rem/6.5rem Georgia, Serif;
+          color: #29bff2;
+          background: #fff;
+          border: 5px solid #fff;
+          height: 100px;
+          width: 100px;
+          margin: 10px auto -65px;
+          border-radius: 100%;
+          box-shadow: 0 5px 20px #ddd inset, 0 3px 0 #999 inset; }
+      .section-5-price #pricing-table .plan a.signup {
+        position: relative;
+        padding: 8px 20px;
+        margin: 20px 0 0 0;
+        color: #fff;
+        font: bold 1.2rem "OpenSansRegular";
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        background-color: rgba(41, 191, 242, 0.9);
+        border-radius: 3px;
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5), 0 2px 0 rgba(0, 0, 0, 0.7); }
+        .section-5-price #pricing-table .plan a.signup:hover {
+          background-color: #29bff2; }
+        .section-5-price #pricing-table .plan a.signup:active, .section-5-price #pricing-table .plan a.signup:focus {
+          background: #29bff2;
+          top: 2px;
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.7) inset; }
+      .section-5-price #pricing-table .plan ul {
+        margin: 20px 0 0 0;
+        padding: 0;
+        list-style: none; }
+        .section-5-price #pricing-table .plan ul li {
+          border-top: 1px solid #ddd;
+          padding: 10px 0; }
+      .section-5-price #pricing-table .plan:nth-child(1) {
+        border-radius: 5px 0 0 5px; }
+        .section-5-price #pricing-table .plan:nth-child(1) h3 {
+          border-radius: 5px 0 0 0; }
+      .section-5-price #pricing-table .plan:nth-child(3) {
+        border-radius: 0 5px 5px 0; }
+        .section-5-price #pricing-table .plan:nth-child(3) h3 {
+          border-radius: 0 5px 0 0; }
+    .section-5-price #pricing-table #most-popular {
+      z-index: 2;
+      top: -13px;
+      border: 2px solid #29bff2;
+      padding: 30px 20px;
+      border-radius: 7px;
+      box-shadow: 20px 0 10px -10px rgba(0, 0, 0, 0.15), -20px 0 10px -10px rgba(0, 0, 0, 0.15); }
+      .section-5-price #pricing-table #most-popular h3 {
+        background-color: #29bff2;
+        margin-top: -30px;
+        padding-top: 30px;
+        border-radius: 5px 5px 0 0; }
+  .section-5-price .clear:before, .section-5-price .clear:after {
+    content: "";
+    display: table; }
+  .section-5-price .clear:after {
+    clear: both; }
+  .section-5-price .clear {
+    zoom: 1; }
+
+/* ----------------SECTION 6 (TEST) ------------------*/
 
 /*# sourceMappingURL=all.css.map */
