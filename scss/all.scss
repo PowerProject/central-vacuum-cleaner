@@ -79,7 +79,6 @@ header {
       bottom:0;
       overflow:hidden;
       .video-bg__video{
-        position: fixed;
         top:0;
         left:0;
         background:url("../bg.jpg") no-repeat center;
@@ -207,7 +206,7 @@ header {
 
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
-  background: url('../img/Vacum-cleaner-in-the-house.png');
+  background: url('../img/Vacum-cleaner-in-the-house.jpg') fixed;
   background-size: contain;
   padding: 4% 0 3% 0;
   position: relative;
@@ -230,9 +229,13 @@ header {
           padding-bottom: 30px;
         }
       }
+      img {
+        width: 30%;
+      }
     }
     video {
       border: 4px solid $white;
+      box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4);
     }
     .Buttons-advantages {
       position: relative;
@@ -240,6 +243,7 @@ header {
       margin-top: 6%;
       .ask a, .test a {
         background: $black;
+        box-shadow: 0 5px 9px rgba(0, 0, 0, 0.4);
         &:hover {
           background: $blue;
         }
@@ -254,6 +258,7 @@ header {
   z-index: 7;
   background: $black;
   padding-top: 4%;
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4);
   .manufacturer {
     h2 {
      @include h2($white)
@@ -266,7 +271,8 @@ header {
   position: relative;
   z-index: 6;
   background: $white;
-  padding: 4% 0 5% 0;
+  padding: 4% 0 6% 0;
+  box-shadow: 0 5px 12px rgba(255, 255, 255, 0.4);
   h2 {
     @include h2($dark-grey);
   }
@@ -283,6 +289,11 @@ header {
       padding: 20px;
       float: left;
       position: relative;
+      transition: 0.2s all ease;
+      &:hover {
+        border: 2px solid $blue;
+        transform: scale(1.05);
+      }
       h3 {
         font-size: 20px;
         font-weight: normal;
@@ -402,9 +413,12 @@ header {
 
 /* ----------------SECTION 6 (TEST) ------------------*/
 .section-6-test {
-  background: url("../img/test.png");
+  background: url("../img/test.jpg") fixed;
   background-size: cover;
-  padding: 4% 0 5%;
+  padding: 4% 0 6%;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4);
   .test {
     h2 {
       @include h2($blue);
@@ -412,35 +426,6 @@ header {
   .contact-form {
     background: url("../img/Vacuum-wooden-floor.jpg");
     border-radius: 8px;
-    form {
-      p {
-        font: 2em OpenSansRegular;
-        color: $black;
-        text-align: center;
-        padding-top: 2%;
-      }
-      input {
-        width: 90%;
-        margin: 6% auto 0;
-        height:46px;
-        font: 1.2rem $OpSans-Light;
-      }
-      button {
-        display: block;
-        margin: 9% auto 10%;
-        background: rgba(21, 189, 244, 0.6);
-        padding: 14px 62px;
-        border: 1px solid rgba(0,0,0,0.8);
-        border-radius: 0;
-        text-transform: uppercase;
-        color: $white;
-        font: 1.2em $OpSans-Reg;
-        box-shadow: 0 0px 8px #fff;
-        &:hover {
-          background: $blue;
-        }
-      }
-    }
   }
   .text-test {
     padding-left: 8%;
@@ -453,9 +438,79 @@ header {
       }
     }
   }
-
-
   }
+}
+form {
+  p {
+    font: 2em OpenSansRegular;
+    color: $black;
+    text-align: center;
+    padding-top: 2%;
+  }
+  input {
+    width: 90%;
+    margin: 6% auto 0;
+    height:46px;
+    font: 1.2rem $OpSans-Light;
+  }
+  button {
+    display: block;
+    margin: 9% auto 10%;
+    background: rgba(21, 189, 244, 0.6);
+    padding: 14px 62px;
+    border: 1px solid rgba(0,0,0,0.8);
+    border-radius: 0;
+    text-transform: uppercase;
+    color: $white;
+    font: 1.2em $OpSans-Reg;
+    box-shadow: 0 0px 8px #fff;
+    transition: 0.4s all ease;
+    &:hover {
+      background: $blue;
+      box-shadow: 0 0 20px white;
+    }
+  }
+}
+
+/* ----------------SECTION 7 (CONTACTS) ------------------*/
+.section-7-contacts {
+  background: $blue;
+  padding: 4% 0 3%;
+ .contacts {
+   h2 {
+     @include h2($dark-grey);
+   }
+    .contact-item{
+       p.item-value {
+        color: $dark-grey;
+        font: 1.5rem $OpSans-Reg;
+        &:before {
+          font-style: normal;
+          font-weight: normal;
+          text-decoration: inherit;
+          font-size: 1.1em;
+          border: 3px solid $dark-grey;
+          padding: 3% 4%;
+          border-radius: 100%;
+          margin-right: 15px;
+        }
+      }
+      .address:before {
+        content: "\f041";
+        font-family: FontAwesome;
+      }
+      .phone:before {
+        content: "\f10b";
+        font-family: FontAwesome;
+      }
+    }
+   .padding-map {
+     margin-top: 5%;
+     padding: 0;
+     border: 1px solid $black;
+   }
+
+ }
 }
 
 

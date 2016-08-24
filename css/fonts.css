@@ -98,3 +98,15 @@
     font-style: normal;
     font-weight: normal;
 }
+
+/* font-family: "fontawesome"; */
+@font-face {
+  font-family: 'fontAwesome';
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot');
+  src: url('../fonts/fontawesome/fontawesome-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/fontawesome/fontawesome-webfont.woff') format('woff'),
+       url('../fonts/fontawesome/fontawesome-webfont.ttf') format('truetype'),
+       url('../fonts/fontawesome/fontawesome-webfont.svg#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

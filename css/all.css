@@ -62,7 +62,6 @@ header {
     bottom: 0;
     overflow: hidden; }
     .section-1-main.bg-cover #video-bg .video-bg__video {
-      position: fixed;
       top: 0;
       left: 0;
       background: url("../bg.jpg") no-repeat center;
@@ -167,7 +166,7 @@ header {
 
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
-  background: url("../img/Vacum-cleaner-in-the-house.png");
+  background: url("../img/Vacum-cleaner-in-the-house.jpg") fixed;
   background-size: contain;
   padding: 4% 0 3% 0;
   position: relative;
@@ -191,14 +190,18 @@ header {
         line-height: 1.8em;
         margin-top: 15px;
         padding-bottom: 30px; }
+    .section-3-advantages .advantages ul img {
+      width: 30%; }
   .section-3-advantages .advantages video {
-    border: 4px solid #fff; }
+    border: 4px solid #fff;
+    box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4); }
   .section-3-advantages .advantages .Buttons-advantages {
     position: relative;
     display: inline-block;
     margin-top: 6%; }
     .section-3-advantages .advantages .Buttons-advantages .ask a, .section-3-advantages .advantages .Buttons-advantages .test a {
-      background: #000; }
+      background: #000;
+      box-shadow: 0 5px 9px rgba(0, 0, 0, 0.4); }
       .section-3-advantages .advantages .Buttons-advantages .ask a:hover, .section-3-advantages .advantages .Buttons-advantages .test a:hover {
         background: #29bff2; }
 
@@ -207,7 +210,8 @@ header {
   position: relative;
   z-index: 7;
   background: #000;
-  padding-top: 4%; }
+  padding-top: 4%;
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4); }
   .section-4-manufacturer .manufacturer h2 {
     color: #fff;
     text-transform: uppercase;
@@ -220,7 +224,8 @@ header {
   position: relative;
   z-index: 6;
   background: #fff;
-  padding: 4% 0 5% 0; }
+  padding: 4% 0 6% 0;
+  box-shadow: 0 5px 12px rgba(255, 255, 255, 0.4); }
   .section-5-price h2 {
     color: #444;
     text-transform: uppercase;
@@ -238,7 +243,14 @@ header {
       color: #333;
       padding: 20px;
       float: left;
-      position: relative; }
+      position: relative;
+      -webkit-transition: 0.2s all ease;
+              transition: 0.2s all ease; }
+      .section-5-price #pricing-table .plan:hover {
+        border: 2px solid #29bff2;
+        -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+                transform: scale(1.05); }
       .section-5-price #pricing-table .plan h3 {
         font-size: 20px;
         font-weight: normal;
@@ -312,9 +324,12 @@ header {
 
 /* ----------------SECTION 6 (TEST) ------------------*/
 .section-6-test {
-  background: url("../img/test.png");
+  background: url("../img/test.jpg") fixed;
   background-size: cover;
-  padding: 4% 0 5%; }
+  padding: 4% 0 6%;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4); }
   .section-6-test .test h2 {
     color: #29bff2;
     text-transform: uppercase;
@@ -324,29 +339,6 @@ header {
   .section-6-test .test .contact-form {
     background: url("../img/Vacuum-wooden-floor.jpg");
     border-radius: 8px; }
-    .section-6-test .test .contact-form form p {
-      font: 2em OpenSansRegular;
-      color: #000;
-      text-align: center;
-      padding-top: 2%; }
-    .section-6-test .test .contact-form form input {
-      width: 90%;
-      margin: 6% auto 0;
-      height: 46px;
-      font: 1.2rem "OpenSansLight"; }
-    .section-6-test .test .contact-form form button {
-      display: block;
-      margin: 9% auto 10%;
-      background: rgba(21, 189, 244, 0.6);
-      padding: 14px 62px;
-      border: 1px solid rgba(0, 0, 0, 0.8);
-      border-radius: 0;
-      text-transform: uppercase;
-      color: #fff;
-      font: 1.2em "OpenSansRegular";
-      box-shadow: 0 0px 8px #fff; }
-      .section-6-test .test .contact-form form button:hover {
-        background: #29bff2; }
   .section-6-test .test .text-test {
     padding-left: 8%; }
     .section-6-test .test .text-test p {
@@ -355,5 +347,65 @@ header {
       line-height: 2em; }
       .section-6-test .test .text-test p span {
         color: #29bff2; }
+
+form p {
+  font: 2em OpenSansRegular;
+  color: #000;
+  text-align: center;
+  padding-top: 2%; }
+form input {
+  width: 90%;
+  margin: 6% auto 0;
+  height: 46px;
+  font: 1.2rem "OpenSansLight"; }
+form button {
+  display: block;
+  margin: 9% auto 10%;
+  background: rgba(21, 189, 244, 0.6);
+  padding: 14px 62px;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  border-radius: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font: 1.2em "OpenSansRegular";
+  box-shadow: 0 0px 8px #fff;
+  -webkit-transition: 0.4s all ease;
+          transition: 0.4s all ease; }
+  form button:hover {
+    background: #29bff2;
+    box-shadow: 0 0 20px white; }
+
+/* ----------------SECTION 7 (CONTACTS) ------------------*/
+.section-7-contacts {
+  background: #29bff2;
+  padding: 4% 0 3%; }
+  .section-7-contacts .contacts h2 {
+    color: #444;
+    text-transform: uppercase;
+    font: 2.5em "OpenSansSemiBold";
+    text-align: center;
+    padding-bottom: 5%; }
+  .section-7-contacts .contacts .contact-item p.item-value {
+    color: #444;
+    font: 1.5rem "OpenSansRegular"; }
+    .section-7-contacts .contacts .contact-item p.item-value:before {
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      font-size: 1.1em;
+      border: 3px solid #444;
+      padding: 3% 4%;
+      border-radius: 100%;
+      margin-right: 15px; }
+  .section-7-contacts .contacts .contact-item .address:before {
+    content: "\f041";
+    font-family: FontAwesome; }
+  .section-7-contacts .contacts .contact-item .phone:before {
+    content: "\f10b";
+    font-family: FontAwesome; }
+  .section-7-contacts .contacts .padding-map {
+    margin-top: 5%;
+    padding: 0;
+    border: 1px solid #000; }
 
 /*# sourceMappingURL=all.css.map */
