@@ -197,12 +197,15 @@ header {
         @media  (max-width: 626px) {
          top: 26%;
           font-size: 2.5rem;
-
       }
       }
-
     }
+  .gif {
+    position: relative;
+    top: 85%;
+    width: 100px;
   }
+}
 
 .rowButtons {
   position: absolute;
@@ -288,7 +291,7 @@ header {
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
   background: url('../img/Vacum-cleaner-in-the-house.jpg') fixed;
-  background-size: contain;
+  background-size: cover;
   padding: 4% 0 3% 0;
   position: relative;
   box-shadow: 0 8px 23px rgba(255,255,255,0.4);
