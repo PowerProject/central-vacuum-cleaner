@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
           integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
@@ -34,7 +34,7 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#main" class="active-link">Главная</a></li>
+                        <li><a href="#main" class="active">Главная</a></li>
                         <li><a href="#desc">Описание</a></li>
                         <li><a href="#advant">Преимущества</a></li>
                         <li><a href="#price">Цена</a></li>
@@ -59,10 +59,10 @@
             <h1>Центральный пылесос</h1>
             <p> Поможет Вам забыть о пыли в доме!</p>
             <div class="rowButtons">
-                <div class="col-md-6 ask" data-toggle="modal" data-target="#myModal">
-                    <a href="#" class="btn btn-lg" role="button" >Задать вопрос</a>
+                <div class="col-md-6 col-sm-6 col-xs-12 ask" data-toggle="modal" data-target="#myModal">
+                    <a href="#" class="btn btn-lg" role="button">Задать вопрос</a>
                 </div>
-                <div class="col-md-6 test">
+                <div class="col-md-6 col-sm-6 col-xs-12 test">
                     <a href="#test" class="btn btn-lg" role="button">Попробовать</a>
                 </div>
             </div>
@@ -185,8 +185,8 @@
                 </video>
             </div>
             <div class="rowButtons Buttons-advantages">
-                <div class="col-md-6 text-right ask">
-                    <a href="#" class="btn btn-lg" role="button" >Задать вопрос</a>
+                <div class="col-md-6 text-right ask" data-toggle="modal" data-target="#myModal">
+                    <a class="btn btn-lg" role="button" >Задать вопрос</a>
                 </div>
                 <div class="col-md-6 text-left test">
                     <a href="#test" class="btn btn-lg" role="button" >Попробовать</a>
@@ -282,35 +282,41 @@
     <div class="contacts container">
         <h2> Наши контакты</h2>
         <div class="col-md-6 contact-item">
-            <p class="item-value  address"> Киев, ул. Антоновича 52 </p>
+            <p class="item-value"> <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Киев, ул. Антоновича 52 </p>
+            <p class="item-value phone"><i class="fa fa-phone fa-lg" aria-hidden="true"></i> +38 (067) 573-1999</p>
+            <p class="item-value phone1"> +38 (044) 466-6700 <p>
+            <p class="item-value phone2">+38 (067) 654-6006</p>
         </div>
 
-        <div class=" col-md-6 contact-item">
-            <p class="item-value  phone"> +38 (067) 573-1999</p>
+        <div class=" col-md-6 contact-item padding-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YXWe7dvcslp1rivxccKhA1R1fltV3qUh&amp;width=100%&amp;height=295&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
         </div>
-        <div class="col-md-12 padding-map">
-            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=YXWe7dvcslp1rivxccKhA1R1fltV3qUh&amp;width=100%&amp;height=295&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>        </div>
     </div>
 </section>
 
 <!-- ========== MODAL) =========== -->
 <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Напишите свой вопрос</h4>
-            </div>
-            <div class="modal-body">
-                <p>One fine body&hellip;</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+        <div class="modal-content text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><img src="img/close.png" alt=""></button>
+            <h4 class="modal-title">Задать вопрос</h4>
+            <form role="form">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" id="name-question" placeholder="Ваше имя">
+                </div>
+                <div class="form-group">
+                    <input type="tel" class="form-control" name="phone" id="phone-question" placeholder="Ваш телефон">
+                </div>
+                <textarea class="form-control" rows="4" name="question" placeholder="Ваш вопрос"></textarea>
+
+                <button type="button" class="btn btn-default text-center" data-dismiss="modal">Отправить</button>
+            </form>
+
+
+
+        </div>
+    </div>
+</div>
 
 </body>
 </html>

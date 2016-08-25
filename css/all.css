@@ -1,8 +1,15 @@
 html {
-  font-size: 14px; }
-
-body {
   font: 14px "OpenSansRegular", sans-serif; }
+  @media (max-width: 1200px) {
+    html {
+      font-size: 12px; } }
+
+body.modal-open {
+  padding-right: 0 !important;
+  overflow: auto; }
+
+a:focus {
+  outline: none; }
 
 /* ----------------HEADER ------------------*/
 header {
@@ -22,9 +29,9 @@ header {
     @media (max-width: 991px) {
       header .navbar {
         min-height: 52px; } }
-    @media (min-width: 990px) {
+    @media (max-width: 991px) {
       header .navbar .navbar-header .navbar-toggle {
-        display: none; } }
+        display: inline; } }
     header .navbar .navbar-header a.navbar-brand {
       padding: 0; }
       header .navbar .navbar-header a.navbar-brand:focus {
@@ -42,9 +49,44 @@ header {
       text-transform: uppercase; }
       header .navbar .navbar-right li a:hover {
         color: #29bff2; }
-    header .navbar .navbar-right li .active-link {
+    header .navbar .navbar-right li .active {
       color: #29bff2; }
 
+@media (max-width: 991px) {
+  .navbar-header {
+    float: none; }
+
+  .navbar-toggle {
+    display: block; }
+
+  .navbar-collapse {
+    border-top: 1px solid transparent;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+  .navbar-collapse.collapse {
+    display: none !important; }
+
+  .navbar-nav {
+    float: none !important;
+    margin: 7.5px -15px; }
+
+  .navbar-nav > li {
+    float: none; }
+
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+  .navbar-text {
+    float: none;
+    margin: 15px 0; }
+
+  /* since 3.1.0 */
+  .navbar-collapse.collapse.in {
+    display: block !important; }
+
+  .collapsing {
+    overflow: hidden !important; } }
 /* ----------------SECTION 1 (MAIN) ------------------*/
 .section-1-main.bg-cover {
   background-image: url("../bg.jpg");
@@ -98,11 +140,15 @@ header {
       width: 100%;
       left: 0%;
       top: 45%; }
+      @media (max-width: 1600px) {
+        .section-1-main.bg-cover .content-main p {
+          font-size: 2.3rem;
+          top: 42%; } }
     .section-1-main.bg-cover .content-main h1 {
       text-transform: uppercase;
       font: 4rem "OpenSansSemiBold";
       color: white;
-      padding: 22px;
+      padding: 1%;
       background: rgba(21, 189, 244, 0.6);
       border: 2px solid rgba(0, 0, 0, 0.5);
       box-shadow: 0 0 14px;
@@ -112,6 +158,9 @@ header {
       width: 100%;
       left: 0%;
       top: 32%; }
+      @media (max-width: 1600px) {
+        .section-1-main.bg-cover .content-main h1 {
+          font-size: 3rem; } }
 
 .rowButtons {
   position: absolute;
@@ -135,7 +184,8 @@ header {
     transition: 0.4s all ease;
     -o-transition: 0.4s all ease;
     -moz-transition: 0.4s all ease;
-    -webkit-transition: 0.4s all ease; }
+    -webkit-transition: 0.4s all ease;
+    font-size: 1.3rem; }
   .rowButtons .ask a:hover, .rowButtons .test a:hover {
     background: #15bdf4;
     box-shadow: 0 0 20px white; }
@@ -175,7 +225,7 @@ header {
   .section-3-advantages .advantages h2 {
     color: #444;
     text-transform: uppercase;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     text-align: center;
     padding-bottom: 5%; }
   .section-3-advantages .advantages ul {
@@ -215,7 +265,7 @@ header {
   .section-4-manufacturer .manufacturer h2 {
     color: #fff;
     text-transform: uppercase;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     text-align: center;
     padding-bottom: 5%; }
 
@@ -229,7 +279,7 @@ header {
   .section-5-price h2 {
     color: #444;
     text-transform: uppercase;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     text-align: center;
     padding-bottom: 5%; }
   .section-5-price #pricing-table {
@@ -333,7 +383,7 @@ header {
   .section-6-test .test h2 {
     color: #29bff2;
     text-transform: uppercase;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     text-align: center;
     padding-bottom: 5%; }
   .section-6-test .test .contact-form {
@@ -343,37 +393,37 @@ header {
     padding-left: 8%; }
     .section-6-test .test .text-test p {
       color: #fff;
-      font: 2em "OpenSansRegular";
-      line-height: 2em; }
+      font: 2rem "OpenSansRegular";
+      line-height: 4.5rem; }
       .section-6-test .test .text-test p span {
         color: #29bff2; }
 
 form p {
-  font: 2em OpenSansRegular;
+  font: 2rem OpenSansRegular;
   color: #000;
   text-align: center;
   padding-top: 2%; }
 form input {
-  width: 90%;
-  margin: 6% auto 0;
-  height: 46px;
-  font: 1.2rem "OpenSansLight"; }
+  width: 90% !important;
+  margin: 6% auto 0 !important;
+  height: 46px !important;
+  font: 1.2rem "OpenSansLight" !important; }
 form button {
-  display: block;
-  margin: 9% auto 10%;
-  background: rgba(21, 189, 244, 0.6);
-  padding: 14px 62px;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  border-radius: 0;
-  text-transform: uppercase;
-  color: #fff;
-  font: 1.2em "OpenSansRegular";
-  box-shadow: 0 0px 8px #fff;
-  -webkit-transition: 0.4s all ease;
-          transition: 0.4s all ease; }
-  form button:hover {
-    background: #29bff2;
-    box-shadow: 0 0 20px white; }
+  display: block !important;
+  margin: 9% auto 10% !important;
+  background: rgba(21, 189, 244, 0.6) !important;
+  padding: 14px 62px !important;
+  border: 1px solid rgba(0, 0, 0, 0.8) !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+  font: 1.2rem "OpenSansBold" !important;
+  box-shadow: 0 0px 8px #fff !important;
+  -webkit-transition: 0.4s all ease !important;
+          transition: 0.4s all ease !important; }
+  form button:hover, form button:active {
+    background: #29bff2 !important;
+    box-shadow: 0 0 20px white !important; }
 
 /* ----------------SECTION 7 (CONTACTS) ------------------*/
 .section-7-contacts {
@@ -382,30 +432,44 @@ form button {
   .section-7-contacts .contacts h2 {
     color: #444;
     text-transform: uppercase;
-    font: 2.5em "OpenSansSemiBold";
+    font: 2.5rem "OpenSansSemiBold";
     text-align: center;
     padding-bottom: 5%; }
   .section-7-contacts .contacts .contact-item p.item-value {
     color: #444;
-    font: 1.5rem "OpenSansRegular"; }
-    .section-7-contacts .contacts .contact-item p.item-value:before {
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      font-size: 1.1em;
+    font: 1.5rem "OpenSansSemiBold"; }
+    .section-7-contacts .contacts .contact-item p.item-value i {
+      margin-right: 15px;
       border: 3px solid #444;
-      padding: 3% 4%;
-      border-radius: 100%;
-      margin-right: 15px; }
-  .section-7-contacts .contacts .contact-item .address:before {
-    content: "\f041";
-    font-family: FontAwesome; }
-  .section-7-contacts .contacts .contact-item .phone:before {
-    content: "\f10b";
-    font-family: FontAwesome; }
+      padding: 15px 17px;
+      border-radius: 50%; }
+  .section-7-contacts .contacts .contact-item p.phonw {
+    margin-top: 35px; }
+  .section-7-contacts .contacts .contact-item p.phone1 {
+    padding-left: 82px;
+    margin-top: -15px; }
+  .section-7-contacts .contacts .contact-item p.phone2 {
+    padding-left: 82px; }
   .section-7-contacts .contacts .padding-map {
-    margin-top: 5%;
     padding: 0;
     border: 1px solid #000; }
+
+/* --MODAL-- */
+#myModal .modal-dialog {
+  margin-top: 9%; }
+  #myModal .modal-dialog .modal-content {
+    border: 3px solid #29bff2;
+    padding-top: 3%; }
+    #myModal .modal-dialog .modal-content button.close {
+      padding-right: 15px; }
+    #myModal .modal-dialog .modal-content h4 {
+      color: #444;
+      font: 1.5rem "OpenSansRegular";
+      text-transform: uppercase;
+      padding-left: 15px; }
+    #myModal .modal-dialog .modal-content form textarea {
+      width: 90%;
+      margin: 6% auto 0;
+      font: 1.2rem "OpenSansLight"; }
 
 /*# sourceMappingURL=all.css.map */
