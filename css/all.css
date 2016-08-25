@@ -1,8 +1,11 @@
 html {
   font: 14px "OpenSansRegular", sans-serif; }
-  @media (max-width: 1200px) {
+  @media (min-width: 768px) and (max-width: 1200px) {
     html {
       font-size: 12px; } }
+  @media (min-width: 450px) and (max-width: 767px) {
+    html {
+      font-size: 10px; } }
 
 body.modal-open {
   padding-right: 0 !important;
@@ -140,10 +143,14 @@ header {
       width: 100%;
       left: 0%;
       top: 45%; }
-      @media (max-width: 1600px) {
+      @media (min-width: 627px) and (max-width: 1600px) {
         .section-1-main.bg-cover .content-main p {
           font-size: 2.3rem;
           top: 42%; } }
+      @media (max-width: 626px) {
+        .section-1-main.bg-cover .content-main p {
+          font-size: 2rem;
+          top: 35%; } }
     .section-1-main.bg-cover .content-main h1 {
       text-transform: uppercase;
       font: 4rem "OpenSansSemiBold";
@@ -158,9 +165,13 @@ header {
       width: 100%;
       left: 0%;
       top: 32%; }
-      @media (max-width: 1600px) {
+      @media (min-width: 676px) and (max-width: 1600px) {
         .section-1-main.bg-cover .content-main h1 {
           font-size: 3rem; } }
+      @media (max-width: 626px) {
+        .section-1-main.bg-cover .content-main h1 {
+          top: 26%;
+          font-size: 2.5rem; } }
 
 .rowButtons {
   position: absolute;
@@ -170,9 +181,17 @@ header {
   .rowButtons .ask {
     text-align: right;
     padding-right: 40px; }
+    @media (max-width: 767px) {
+      .rowButtons .ask {
+        text-align: center;
+        padding: 0; } }
   .rowButtons .test {
     text-align: left;
     padding-left: 40px; }
+    @media (max-width: 767px) {
+      .rowButtons .test {
+        text-align: center;
+        padding: 2% 0; } }
   .rowButtons .ask a, .rowButtons .test a {
     border: 2px solid #000;
     color: #fff;
@@ -185,7 +204,8 @@ header {
     -o-transition: 0.4s all ease;
     -moz-transition: 0.4s all ease;
     -webkit-transition: 0.4s all ease;
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+    min-width: 193px; }
   .rowButtons .ask a:hover, .rowButtons .test a:hover {
     background: #15bdf4;
     box-shadow: 0 0 20px white; }
@@ -204,6 +224,10 @@ header {
     text-align: center;
     font: 2.5rem "OpenSansSemiBold";
     margin-bottom: 8%; }
+  .section-2-description .description-text .rowWork {
+    clear: both; }
+  .section-2-description .description-text .rowSweep {
+    display: inline-block; }
   .section-2-description .description-text p {
     font: 1.3rem "OpenSansRegular";
     line-height: 1.8em; }
@@ -389,6 +413,9 @@ header {
   .section-6-test .test .contact-form {
     background: url("../img/Vacuum-wooden-floor.jpg");
     border-radius: 8px; }
+    @media (max-width: 991px) {
+      .section-6-test .test .contact-form {
+        padding-bottom: 1px; } }
   .section-6-test .test .text-test {
     padding-left: 8%; }
     .section-6-test .test .text-test p {
@@ -471,4 +498,5 @@ form button {
       width: 90%;
       margin: 6% auto 0;
       font: 1.2rem "OpenSansLight"; }
+
 /*# sourceMappingURL=all.css.map */

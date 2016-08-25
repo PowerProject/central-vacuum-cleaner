@@ -2,8 +2,11 @@
 
 html {
   font: 14px $OpSans-Reg, sans-serif;
-  @media (max-width: 1200px) {
+  @media (min-width: 768px)and (max-width: 1200px) {
     font-size: 12px;
+  }
+  @media (min-width: 450px) and (max-width: 767px) {
+    font-size: 10px;
   }
 }
 
@@ -165,9 +168,13 @@ header {
           width: 100%;
           left: 0%;
           top: 45%;
-        @media  (max-width: 1600px) {
+        @media (min-width: 627px) and (max-width: 1600px) {
           font-size: 2.3rem;
           top: 42%;
+        }
+        @media  (max-width: 626px) {
+          font-size: 2rem;
+          top: 35%;
         }
       }
       h1 {
@@ -184,9 +191,14 @@ header {
         width: 100%;
         left: 0%;
         top: 32%;
-        @media  (max-width: 1600px) {
+        @media (min-width:676px) and (max-width: 1600px) {
           font-size: 3rem;
         }
+        @media  (max-width: 626px) {
+         top: 26%;
+          font-size: 2.5rem;
+
+      }
       }
 
     }
@@ -200,10 +212,18 @@ header {
   .ask {
     text-align: right;
     padding-right: 40px;
+    @media (max-width: 767px) {
+      text-align: center;
+      padding: 0;
+    }
   }
   .test {
     text-align: left;
     padding-left: 40px;
+    @media (max-width: 767px) {
+      text-align: center;
+      padding: 2% 0;
+    }
   }
   .ask a, .test a {
     border: 2px solid $black;
@@ -218,6 +238,7 @@ header {
     -moz-transition: 0.4s all ease;
     -webkit-transition: 0.4s all ease;
     font-size: 1.3rem;
+    min-width: 193px;
   }
   .ask a:hover, .test a:hover {
     background: rgba(21, 189, 244, 1);
@@ -242,6 +263,12 @@ header {
     margin-bottom: 8%;
   }
   .description-text {
+    .rowWork {
+      clear: both;
+    }
+    .rowSweep {
+      display: inline-block;
+    }
     p {
       font: 1.3rem $OpSans-Reg;
       line-height: 1.8em;
@@ -480,6 +507,9 @@ header {
   .contact-form {
     background: url("../img/Vacuum-wooden-floor.jpg");
     border-radius: 8px;
+    @media (max-width: 991px) {
+      padding-bottom: 1px;
+    }
   }
 
   .text-test {
