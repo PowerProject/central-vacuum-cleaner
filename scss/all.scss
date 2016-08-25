@@ -5,8 +5,11 @@ html {
   @media (min-width: 768px)and (max-width: 1200px) {
     font-size: 12px;
   }
-  @media (min-width: 450px) and (max-width: 767px) {
+  @media (min-width: 451px) and (max-width: 767px) {
     font-size: 10px;
+  }
+  @media (max-width: 450px) {
+    font-size: 9px;
   }
 }
 
@@ -172,9 +175,13 @@ header {
           font-size: 2.3rem;
           top: 42%;
         }
-        @media  (max-width: 626px) {
+        @media (min-width: 481px) and (max-width: 626px) {
           font-size: 2rem;
           top: 35%;
+        }
+        @media  (max-width: 480px) {
+          font-size: 1.5rem;
+          top: 30%;
         }
       }
       h1 {
@@ -191,13 +198,17 @@ header {
         width: 100%;
         left: 0%;
         top: 32%;
-        @media (min-width:676px) and (max-width: 1600px) {
+        @media (min-width:626px) and (max-width: 1600px) {
           font-size: 3rem;
         }
-        @media  (max-width: 626px) {
+        @media (min-width: 451px) and (max-width: 626px) {
          top: 26%;
           font-size: 2.5rem;
       }
+        @media (max-width: 450px) {
+          top: 26%;
+          font-size: 1.9rem;
+        }
       }
     }
   .gif {
@@ -212,6 +223,9 @@ header {
   width: 100%;
   left: 0%;
   top: 60%;
+  @media (max-width: 480px) {
+    top: 54%;
+  }
   .ask {
     text-align: right;
     padding-right: 40px;
@@ -225,7 +239,7 @@ header {
     padding-left: 40px;
     @media (max-width: 767px) {
       text-align: center;
-      padding: 2% 0;
+      padding: 3% 0;
     }
   }
   .ask a, .test a {
@@ -302,6 +316,7 @@ header {
     }
     ul {
       @include inline-block;
+      padding: 0;
       li {
         list-style: none;
         float: left;
@@ -341,7 +356,7 @@ header {
   position: relative;
   z-index: 7;
   background: $black;
-  padding-top: 4%;
+  padding: 4% 0;
   box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4);
   .manufacturer {
     h2 {
@@ -386,7 +401,7 @@ header {
         background-color: #eee;
         span {
           display: block;
-          font: bold 1.3rem/6.5rem Georgia, Serif;
+          font: bold 25px/85px Georgia, Serif;
           color: $blue;
           background: #fff;
           border: 5px solid #fff;
