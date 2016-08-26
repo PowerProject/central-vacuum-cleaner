@@ -517,7 +517,7 @@ header {
   padding: 4% 0 6%;
   position: relative;
   z-index: 5;
-  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4);
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4);
   .test {
     h2 {
       @include h2($blue);
@@ -572,6 +572,52 @@ form {
       background: $blue !important;
       box-shadow: 0 0 20px white !important;
     }
+  }
+}
+/* ----------------SECTION PowerProject ------------------*/
+.section-powerproject {
+  background: #fff;
+  padding: 4% 0;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4);
+  .powerproject {
+    h2 {
+      @include h2($dark-grey);
+      text-transform: none;
+    }
+    .row {
+      text-align: center;
+      p {
+        font: 2rem $OpSans-Reg;
+        line-height: 3.5rem;
+        span {
+          color: $blue;
+        }
+      }
+      a {
+        margin-top: 2%;
+        border: 3px solid $blue;
+        color: $blue;
+        border-radius: 0;
+        background: transparent;
+        padding: 16px 40px;
+        text-transform: uppercase;
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+        transition: 0.4s all ease;
+        -o-transition: 0.4s all ease;
+        -moz-transition: 0.4s all ease;
+        -webkit-transition: 0.4s all ease;
+        font-size: 1.3rem;
+        min-width: 193px;
+        &:hover {
+          background: rgba(21, 189, 244, 1);
+          box-shadow: 0 0 20px rgba(255, 255, 255, 1);
+          color: $white;
+        }
+      }
+    }
+
   }
 }
 

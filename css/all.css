@@ -422,7 +422,7 @@ header {
   padding: 4% 0 6%;
   position: relative;
   z-index: 5;
-  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4); }
+  box-shadow: 0 11px 28px rgba(0, 0, 0, 0.4); }
   .section-6-test .test h2 {
     color: #29bff2;
     text-transform: uppercase;
@@ -470,6 +470,47 @@ form button {
   form button:hover, form button:active {
     background: #29bff2 !important;
     box-shadow: 0 0 20px white !important; }
+
+/* ----------------SECTION PowerProject ------------------*/
+.section-powerproject {
+  background: #fff;
+  padding: 4% 0;
+  position: relative;
+  z-index: 4;
+  box-shadow: 0 10px 23px rgba(255, 255, 255, 0.4); }
+  .section-powerproject .powerproject h2 {
+    color: #444;
+    text-transform: uppercase;
+    font: 2.5rem "OpenSansSemiBold";
+    text-align: center;
+    padding-bottom: 5%;
+    text-transform: none; }
+  .section-powerproject .powerproject .row {
+    text-align: center; }
+    .section-powerproject .powerproject .row p {
+      font: 2rem "OpenSansRegular";
+      line-height: 3.5rem; }
+      .section-powerproject .powerproject .row p span {
+        color: #29bff2; }
+    .section-powerproject .powerproject .row a {
+      margin-top: 2%;
+      border: 3px solid #29bff2;
+      color: #29bff2;
+      border-radius: 0;
+      background: transparent;
+      padding: 16px 40px;
+      text-transform: uppercase;
+      box-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
+      transition: 0.4s all ease;
+      -o-transition: 0.4s all ease;
+      -moz-transition: 0.4s all ease;
+      -webkit-transition: 0.4s all ease;
+      font-size: 1.3rem;
+      min-width: 193px; }
+      .section-powerproject .powerproject .row a:hover {
+        background: #15bdf4;
+        box-shadow: 0 0 20px white;
+        color: #fff; }
 
 /* ----------------SECTION 7 (CONTACTS) ------------------*/
 .section-7-contacts {
