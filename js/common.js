@@ -3,6 +3,19 @@ $(document).ready(function(){
             $('.section-1-main').css({'height': $(window).height() + 'px'});
         };
     settings();
+
+/*
+    var href = 'desc, advant, price, test';
+
+    var arr = href.split(', ');
+
+    for (var i = 0; i < arr.length; i++) {
+        var section;
+        section[i]=$('#' + arr[i]).offset().top;
+        alert(section[i]);
+    }
+*/
+
     function scrollHref(){
         var section2 = $('#desc').offset().top,
             section3 = $('#advant').offset().top,

@@ -258,12 +258,12 @@ header {
 
 /* ----------------SECTION 3 (ADVANTAGES) ------------------*/
 .section-3-advantages {
-  background: url("../img/Vacum-cleaner-in-the-house.jpg") fixed;
+  background: url("../img/Vacum-cleaner-in-the-house.jpg");
   background-size: cover;
   padding: 4% 0 3% 0;
   position: relative;
   box-shadow: 0 8px 23px rgba(255, 255, 255, 0.4);
-  z-index: 8; }
+  z-index: -1; }
   .section-3-advantages .advantages h2 {
     color: #444;
     text-transform: uppercase;
